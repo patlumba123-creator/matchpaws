@@ -2,59 +2,56 @@ import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/favorites_screen.dart';
 import 'screens/profile_screen.dart';
+import 'models/pet.dart';
 
 void main() {
-  runApp(MatchPawsApp());
+  runApp(MyApp());
 }
 
-class MatchPawsApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'MatchPaws',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-        useMaterial3: true,
-      ),
-      home: MainScreen(),
-    );
-  }
+  _MyAppState createState() => _MyAppState();
 }
 
-class MainScreen extends StatefulWidget {
-  @override
-  State<MainScreen> createState() => _MainScreenState();
-}
+class _MyAppState extends State<MyApp> {
+  List<Pet> favorites = [];
 
-class _MainScreenState extends State<MainScreen> {
-  int _selectedIndex = 0;
-
-  final List<Widget> _screens = [
-    HomeScreen(),
-    FavoritesScreen(),
-    ProfileScreen(),
-  ];
-
-  void _onItemTapped(int index) {
+  void _addToFavorites(Pet pet) {
     setState(() {
-      _selectedIndex = index;
+      if (!favorites.contains(pet)) {
+        favorites.add(pet);
+      }
     });
   }
 
+  int _selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: _screens[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.pets), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorites"),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
-        ],
+    final screens = [
+      HomeScreen(favorites: favorites),  
+      FavoritesScreen(favorites: favorites),
+      ProfileScreen(),
+    ];
+
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: screens[_selectedIndex],
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _selectedIndex,
+          onTap: (index) {
+            setState(() {
+              _selectedIndex = index;
+            });
+          },
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.pets), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "Favorites"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
+          ],
+        ),
       ),
     );
   }
 }
-
