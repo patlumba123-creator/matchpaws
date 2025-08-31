@@ -14,7 +14,7 @@ final basePets = [
     name: "Mittens",
     age: 1,
     breed: "Tabby Cat",
-    imageUrl: "https://placekitten.com/500/500",
+    imageUrl: "https://pin.it/73drt1Gh3",
     description: "Playful and cuddly.",
   ),
   Pet(
@@ -22,7 +22,7 @@ final basePets = [
     name: "Max",
     age: 3,
     breed: "Beagle",
-    imageUrl: "https://placedog.net/501",
+    imageUrl: "https://pin.it/6rcchXD5J",
     description: "Loves walks and treats.",
   ),
   Pet(
@@ -30,7 +30,7 @@ final basePets = [
     name: "Bella",
     age: 4,
     breed: "Labrador",
-    imageUrl: "https://placedog.net/502",
+    imageUrl: "https://pin.it/3GWkvCZHa",
     description: "Gentle and loves kids.",
   ),
   Pet(
@@ -38,7 +38,7 @@ final basePets = [
     name: "Shadow",
     age: 2,
     breed: "Black Cat",
-    imageUrl: "https://placekitten.com/501/501",
+    imageUrl: "https://pin.it/7yIrCePBF",
     description: "Mysterious and loyal.",
   ),
   Pet(
@@ -46,7 +46,7 @@ final basePets = [
     name: "Charlie",
     age: 1,
     breed: "Corgi",
-    imageUrl: "https://placedog.net/503",
+    imageUrl: "https://pin.it/7yIrCePBF",
     description: "Short legs, big heart.",
   ),
 ];
