@@ -6,7 +6,7 @@ final basePets = [
     name: "Buddy",
     age: 2,
     breed: "Golden Retriever",
-    imageUrl: "https://pin.it/5doFQYdrz",
+    imageUrl: "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1200&q=80",
     description: "Friendly and energetic.",
   ),
   Pet(
@@ -14,7 +14,7 @@ final basePets = [
     name: "Mittens",
     age: 1,
     breed: "Tabby Cat",
-    imageUrl: "https://pin.it/73drt1Gh3",
+    imageUrl: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=1200&q=80",
     description: "Playful and cuddly.",
   ),
   Pet(
@@ -22,7 +22,7 @@ final basePets = [
     name: "Max",
     age: 3,
     breed: "Beagle",
-    imageUrl: "https://pin.it/6rcchXD5J",
+    imageUrl: "https://images.unsplash.com/photo-1601758124099-166a7a9275a3?auto=format&fit=crop&w=1200&q=80",
     description: "Loves walks and treats.",
   ),
   Pet(
@@ -30,7 +30,7 @@ final basePets = [
     name: "Bella",
     age: 4,
     breed: "Labrador",
-    imageUrl: "https://pin.it/3GWkvCZHa",
+    imageUrl: "https://images.unsplash.com/photo-1583511655903-9ff38f5b9f73?auto=format&fit=crop&w=1200&q=80",
     description: "Gentle and loves kids.",
   ),
   Pet(
@@ -38,7 +38,7 @@ final basePets = [
     name: "Shadow",
     age: 2,
     breed: "Black Cat",
-    imageUrl: "https://pin.it/7yIrCePBF",
+    imageUrl: "https://images.unsplash.com/photo-1595433707802-6b2626ef5b8a?auto=format&fit=crop&w=1200&q=80",
     description: "Mysterious and loyal.",
   ),
   Pet(
@@ -46,7 +46,7 @@ final basePets = [
     name: "Charlie",
     age: 1,
     breed: "Corgi",
-    imageUrl: "https://pin.it/7yIrCePBF",
+    imageUrl: "https://images.unsplash.com/photo-1602067340370-bdcebe8d1930?auto=format&fit=crop&w=1200&q=80",
     description: "Short legs, big heart.",
   ),
 ];

@@ -14,5 +14,10 @@ class Pet {
     required this.imageUrl,
     required this.description,
   });
-}
 
+  @override
+  bool operator ==(Object other) => other is Pet && other.id == id;
+
+  @override
+  int get hashCode => id.hashCode;
+}
